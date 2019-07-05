@@ -1,34 +1,38 @@
+/*--------------------------MediaQueries------------------*/
+
+
 /*----------------------------Header-----------------------*/
 
-header{
-    background-color:grey;
-}
+
 .col-sm {
     text-align:center;
 }
 
 header a{
-    font-family: "Fjalla Ona", sans-serif;
-    font-weight: 100;
-    font-size: 20px;
+    font-family: "Noto sans", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
     color:white;
     text-align: center;
 }
  
-header a:hover {
+ header a:hover {
   color: black;
   text-decoration: none;
-  background-color: inherit;
+
  }
 
-.fa-grip-lines {
+.top-nav{
+    background:#6E7E86;
+}
+.fa-grip-lines{
     color:#fafafa;
 }
 
 
  /*------------------------------------ Dropdown Menu Link/Button----------------------------------- */
 .dropbtn {
-    background-color:grey;
+    background:transparent;
     font-family: "Fjalla Ona", sans-serif;
     font-weight: 100;
     font-size: 20px;
@@ -49,14 +53,17 @@ header a:hover {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-family: "Noto sans", sans-serif;
+  font-weight:100px;
+  font-size:20px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align:left;
 }
 
 /* Change color of dropdown links on hover */
@@ -66,7 +73,7 @@ header a:hover {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: black;}
+.dropdown:hover .dropbtn {color: black;}
 
 
 /*----------------------------navbar-----------------------*/
@@ -276,14 +283,10 @@ textarea:hover {
 
 
 
-/*----------------------Contact2-------------------------------------*/
-
-
-
 /*----------------------------Parallax1-----------------------*/
 
 .paralsec1{
-    background-image: url("../assets/Stairs.jpg");
+    background-image: url("../assets/stairs.jpg");
     font-family: "Fjalla Ona", sans-serif;
     font-weight:lighter;
     text-transform: uppercase;
@@ -291,3 +294,41 @@ textarea:hover {
     color:grey;
 
 } 
+
+/*----------------------------The team-----------------------*/
+
+.main{
+  padding-top: 50px;
+  margin-left: 10px;
+  
+}
+
+
+.paralsec2{
+  background:#fafafa;
+  margin-left:10px;
+}
+
+.title{
+    font-family: "Nato sans", sans-serif;
+    font-weight:lighter;
+    text-transform: uppercase;
+    font-size: 100;
+    color:grey;
+    margin-left:10px;
+
+}
+
+.par p{
+  font-family: "Nato sans", sans-serif;
+    font-weight:lighter;
+    font-size: 20;
+    color:grey;
+    background-color:#fafafa;
+    margin-left:10px;
+}
+  
+}
+.shots{
+  
+}
