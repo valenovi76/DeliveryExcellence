@@ -1,9 +1,15 @@
 /*--------------------------MediaQueries------------------*/
 
 
-/*----------------------------Header/Navbar-----------------------*/
+/*----------------------------Header-----------------------*/
 
 
+
+
+header{
+  margin: 0px 25px 0px;
+  
+}
 header a{
     font-family: "Noto sans", sans-serif;
     font-weight: lighter;
@@ -17,13 +23,85 @@ header a{
   text-decoration: none;
 
  }
+.col-sm {
+    text-align:center;
+}
+.top-nav{
+    background:#6E7E86;
+}
+.fa-grip-lines{
+    color:#fafafa;
+}
 
 
+ /*------------------------------------ Dropdown Menu Link/Button----------------------------------- */
+.dropbtn {
+    background:transparent;
+    font-family: "Noto sans", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+    border: none;
+    letter-spacing: inherit;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: "Noto sans", sans-serif;
+  font-weight:100px;
+  font-size:20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align:left;
+  margin-left: 10px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+  margin:0px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: black;}
+
+
+/*----------------------------navbar-----------------------*/
+.navbar{
+  background:transparent;
+    font-family: "Noto sans", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+    border: none;
+    letter-spacing: inherit
+}
+  
+}
 nav a {
     font-family: "Fjalla Ona", sans-serif;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 25px;
     color:white;
+    text-transform:uppercase;
     text-align: left;
 }
  nav a:hover {
@@ -37,13 +115,6 @@ nav a {
   padding-top:10px;
 }
 
-h1{font-family: "Fjalla Ona", sans-serif;
-    font-weight: 200;
-    font-size: 1000px;
-    color:white;
-    text-transform: uppercase;
-  
-}
 /*----------------------------Footer-----------------------*/
 .container-fluid{
     margin-left: 0;
@@ -232,15 +303,21 @@ textarea:hover {
 #submit:hover {
   color: #e2dedb;
 }
-/*----------------------------HomePage-----------------------*/
-body{
-  background-image: url("../assets/stairs.jpg");
-  
-}
 
-.jumbotron{
-  background: transparent
-}
+
+
+/*----------------------------Parallax1-----------------------*/
+
+.paralsec1{
+    background-image: url("../assets/stairs.jpg");
+    font-family: "Fjalla Ona", sans-serif;
+    font-weight:lighter;
+    text-transform: uppercase;
+    font-size: 300px;
+    color:grey;
+
+} 
+
 /*----------------------------The team-----------------------*/
 
 .main{
