@@ -60,6 +60,10 @@ h1{font-family: "Fjalla Ona", sans-serif;
     color:white;
 }
 /*---------------------------Contact page ----------------------*/
+.contact-pg {
+  background:white;
+}
+
 i{
   text-align: center;
 }
@@ -282,13 +286,12 @@ textarea:hover {
 
 
 /*----------------------------HomePage-----------------------*/
-body{
-  background-image: url("../assets/stairs.jpg");
-  
-}
+
 
 .jumbotron{
-  background: transparent
+  background-image: url("../assets/bulb.jpg");
+  background-size:cover;
+  margin-bottom:0px;
 }
 /*----------------------------The team-----------------------*/
 
@@ -299,10 +302,6 @@ body{
 }
 
 
-.paralsec2{
-  background:#fafafa;
-  margin-left:10px;
-}
 
 .title{
     font-family: "Nato sans", sans-serif;
@@ -314,8 +313,8 @@ body{
 
 }
 
-.par p{
-  font-family: "Nato sans", sans-serif;
+.par {
+    font-family: "Nato sans", sans-serif;
     font-weight:lighter;
     font-size: 20;
     color:grey;
@@ -323,7 +322,6 @@ body{
     margin-left:10px;
 }
   
-}
 .shots{
   
 }
