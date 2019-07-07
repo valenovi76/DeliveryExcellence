@@ -8,6 +8,52 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="./assets/style.css" type="text/css" />
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      
+      function drawChart() {
+        
+        
+        var data = google.visualization.arrayToDataTable([
+          ['Skills', '%'],
+          ['L6sigma',     3],
+          ['Root Cause Analysis',      1],
+          ['Project Management',  7],
+          ['Risk Assesment', 2],
+          ['CI',    11]
+        ]);
+
+        var options = {
+          title: 'Michelle Finnegan Skills',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+        
+        
+                var data2 = google.visualization.arrayToDataTable([
+          ['Skills', '%'],
+          ['L6sigma',     3],
+          ['Root Cause Analysis',      4],
+          ['Project Management',  7],
+          ['Risk Assesment', 4],
+          ['CI',    11]
+        ]);
+
+        var options2 = {
+          title: 'Karen Corcoran Skills',
+          is3D: true,
+        };
+
+        var chart2 = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart2.draw(data2, options2);
+      }
+    </script>
     <title>Delivery Excellence Home</title>
 </head>
 <body>
@@ -42,21 +88,24 @@
     
     <section class="main-content">
          
-          <div class="container-fluid paral-team">
+          <div class="container paral-team">
                   <div class="row title">
+                    <div class="col-12">
                           <h2 class "main_title">The team</h2>
+                          <p>We are a team of professionals, fully trained in Lean Six Sigma and Continuos Improvement</p>
+                    </div>
                   </div>
-            
-                  <div class="row par">
-                            <p>We are a team of professionals, fully trained in Lean Six Sigma and Continuos Improvement</p>
-                  </div>
-                  <div class="row">
-                        <div class="col-8 shots">
+                  <div class="row shots-section">
+                        <div class="col-6 shots">
                             <ul>
-                                <li><img src="../assets/michelle.jpg"></img></li>
-                                <li><img src="../assets/karen.jpg"></img></li>
-                                <li><img src="../assets/vale.jpg"></img></li>
+                                <li><img src="./assets/michelle.jpg"></img><p>Lean Six Sigma Black Belt certified.Highly experience in process control and development, root cause analysis</p></li>
+                                <li><img src="./assets/karen.jpg"></img><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut dignissim sem. Praesent hendrerit posuere porttitor. Sed vel quam fringilla, convallis nulla et, tristique lorem.</p></li>
+                                <li><img src="./assets/vale.jpg"></img><p>Ut vulputate sem nec ultricies posuere. Ut accumsan sollicitudin justo, sit amet rhoncus nibh porta a. Phasellus venenatis condimentum dignissim. </p></li>
                              </ul>
+                        </div>
+                        <div class="col-6 graphs">
+                          <div id="piechart_3d" style="width: 400px; height: 400px;"></div>  
+ 
                         </div>
                     </div>
     </section>

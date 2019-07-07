@@ -6,6 +6,13 @@ background-color : #6400AA
 color : #FFFFFF*?
 
 /*----------------------------Header/Navbar-----------------------*/
+header{
+  position: relative;
+    margin-bottom:0px !important;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+}
 
 .navbar{letter-spacing: 2px;
         font-family: "Noto sans", sans-serif;
@@ -30,7 +37,19 @@ nav a {
  }
 
 /*----------------------------Main Section-----------------------*/
+.home-page{
+  margin-top:250px;
+  margin-left: 50px;
+  
+}
 
+.bckgrnd{
+  height:100vh;
+  background-image: url("../assets/bulb.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
 .main-content{
   padding-top:10px;
 }
@@ -287,12 +306,6 @@ textarea:hover {
 
 /*----------------------------HomePage-----------------------*/
 
-
-.jumbotron{
-  background-image: url("../assets/bulb.jpg");
-  background-size:cover;
-  margin-bottom:0px;
-}
 /*----------------------------The team-----------------------*/
 
 .main{
@@ -322,6 +335,15 @@ textarea:hover {
     margin-left:10px;
 }
   
-.shots{
-  
+img {
+  height:146px;
+  width:146px;
+  margin-top: 40px;
+  border-radius: 50%;
 }
+  
+.shots-section{
+  background:#fafafa;
+}
+
+
