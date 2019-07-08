@@ -9,55 +9,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="./assets/style.css" type="text/css" />
     
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-    
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      
-      function drawChart() {
-        
-        
-        var data = google.visualization.arrayToDataTable([
-          ['Skills', '%'],
-          ['L6sigma',     3],
-          ['Root Cause Analysis',      1],
-          ['Project Management',  7],
-          ['Risk Assesment', 2],
-          ['CI',    11]
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Draw the pie chart for Sarah's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawSarahChart);
+
+      // Draw the pie chart for the Anthony's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawAnthonyChart);
+
+      // Callback that draws the pie chart for Sarah's pizza.
+      function drawSarahChart() {
+
+        // Create the data table for Sarah's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 1],
+          ['Onions', 1],
+          ['Olives', 2],
+          ['Zucchini', 2],
+          ['Pepperoni', 1]
         ]);
 
-        var options = {
-          title: 'Michelle Finnegan Skills',
-          is3D: true,
+        // Set options for Sarah's pie chart.
+        var options = {title:'How Much Pizza Sarah Ate Last Night',
+                       width:400,
+                       height:300,
+                       colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC']
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        // Instantiate and draw the chart for Sarah's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Sarah_chart_div'));
         chart.draw(data, options);
-        
-        
-                var data2 = google.visualization.arrayToDataTable([
-          ['Skills', '%'],
-          ['L6sigma',     3],
-          ['Root Cause Analysis',      4],
-          ['Project Management',  7],
-          ['Risk Assesment', 4],
-          ['CI',    11]
+      }
+
+      // Callback that draws the pie chart for Anthony's pizza.
+      function drawAnthonyChart() {
+
+        // Create the data table for Anthony's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 2],
+          ['Onions', 2],
+          ['Olives', 2],
+          ['Zucchini', 0],
+          ['Pepperoni', 3]
         ]);
 
-        var options2 = {
-          title: 'Karen Corcoran Skills',
-          is3D: true,
+        // Set options for Anthony's pie chart.
+        var options = {title:'How Much Pizza Anthony Ate Last Night',
+                       width:400,
+                       height:300,
+          colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC']
         };
 
-        var chart2 = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart2.draw(data2, options2);
+        // Instantiate and draw the chart for Anthony's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
+        chart.draw(data, options);
       }
     </script>
+    
+    
+    
+    
     <title>Delivery Excellence Home</title>
 </head>
 <body>
-    <header>
+
         <div class="container">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #6400AA;">
                   <a class="navbar-brand" href="index.html">Delivery Excellence</a>
@@ -69,13 +94,13 @@
                     <ul class="navbar-nav mr-auto">
         
                           <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="team.html">About</a>
                           </li>
                           <li class="nav-item">
-                                <a class="nav-link" href="#">Method</a>
+                                <a class="nav-link" href="method.html">Method</a>
                           </li>
                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
                           </li>
                           <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact Us</a>
@@ -84,11 +109,12 @@
                       </div>
                 </nav>
         </div>
-    </header>
+
     
-    <section class="main-content">
+
          
-          <div class="container paral-team">
+          <div class="container team-main">
+            <section class="team-pg">
                   <div class="row title">
                     <div class="col-12">
                           <h2 class "main_title">The team</h2>
@@ -104,12 +130,18 @@
                              </ul>
                         </div>
                         <div class="col-6 graphs">
-                          <div id="piechart_3d" style="width: 400px; height: 400px;"></div>  
+                          <table class="columns">
+      <tr>
+        <td><div id="Sarah_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="Anthony_chart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table>
  
                         </div>
-                    </div>
-    </section>
-    
+            </section>
+          </div>
+
+        
     <footer class="container-fluid font-small blue fixed-bottom">
                 <div class="footer-copyright">
                     <a href="https://mdbootstrap.com/education/bootstrap/"> © 2018 Copyright: VNovara.com</a>

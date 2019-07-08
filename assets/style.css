@@ -6,14 +6,11 @@ background-color : #6400AA
 color : #FFFFFF*?
 
 /*----------------------------Header/Navbar-----------------------*/
-header{
-  position: relative;
-    margin-bottom:0px !important;
-    font-size: 2.3em;
-    text-align: center;
-    letter-spacing: 7px;
+.container-fluid{margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    margin-top: 100px;
 }
-
 .navbar{letter-spacing: 2px;
         font-family: "Noto sans", sans-serif;
         font-weight: lighter;
@@ -31,12 +28,13 @@ nav a {
     color:white;
     text-align: left;
 }
- nav a:hover {
+nav a:hover {
   color: grey;
   text-decoration: none;
  }
 
 /*----------------------------Main Section-----------------------*/
+
 .home-page{
   margin-top:250px;
   margin-left: 50px;
@@ -87,23 +85,28 @@ h1{font-family: "Fjalla Ona", sans-serif;
 
 i{
   text-align: center;
+  display: inline-block;
+  width: 100%;
+  
 }
 
 h4 {
   font-family:"Fajalla Ona", sans-serif;
   font-size: 20px;
   text-transform:uppercase;
+  color:#333333;
+  margin-top: 10px;
   
 }
 .fa-phone{
       font-size: 3rem;
       margin-top: 50px;
-      margin-left: 60px;
+      color:#C30D4C;
 }
 
 .fa-home{
       font-size: 3rem;
-      margin-top: 50px; 
+      margin-top: 50px;
       color:#C30D4C;
 }
 
@@ -142,182 +145,42 @@ h4 {
 
 .cont-form{
   flex-grow: 0;
+  width:400px;
+  padding-top:20px;
 }
 
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #333333;
-  font-size: 0.875em;
-}
-
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #333333;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #bbb5af;
-}
-
-input::placeholder, textarea::placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-input:focus::placeholder, textarea::focus:placeholder {
-  color: #bbb5af;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: #bbb5af;
-}
-
-/* on hover placeholder */
-
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: #C30D4C;
-}
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: #262626;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: #C30D4C;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #262626;
-  font-size: 0.875em;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: #C30D4C;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #262626;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: #C30D4C;
-}
-
-body {
-  font-family: 'Noto sans', sans-serif;
-  background: #fafafa;
-  color: #b3aca7;
-}
-
-header {
-  position: relative;
-  margin: 100px 0 25px 0;
-  font-size: 2.3em;
-  text-align: center;
-  letter-spacing: 7px;
-}
-
-#form {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
-}
-
-input {
-  font-family: 'Noto sans', sans-serif;
-  font-size: 20px;
-  width: 400px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  
-  background: transparent;
-  outline: none;
-  color: #726659;
-  margin-bottom:0px;
-  border: solid 1px #b3aca7;
-  
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
+        
+      
+.cont-form input{
+            font-family:"Fajalla Ona", sans-serif;
+            text-transform:uppercase;
+            text-align:left;
+            width:350px; 
+            margin-top:0px;
+            height:30px;
+            
+            }
+        
+.cont-form  input[type=textarea] {
+            height:100px;
+        }
+        
+.btn{margin-top:20px;
+            background-color:#C30D4C;
+           
+        }
 input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+  background: #EEEEEE;
+  color: #333333;
 }
 
-textarea {
-  width: 400px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  
-  background: transparent;
-  outline: none;
-  
-  color: #726659;
-  font-family: 'Noto sans', sans-serif;
-  font-size: 20px;
-  
-  border: solid 1px #b3aca7;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
+.gmap {margin-top:20px;}
 
-textarea:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-}
-
-#submit {
-  width: 400px;
-  
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-  
-  font-family: 'Noto sans', sans-serif;
-  font-size: 20px;
-  color: #b3aca7;
-  
-  outline:none;
-  cursor: pointer;
-  
-  border: solid 1px #b3aca7;
-  border-top: none;
-}
-
-#submit:hover {
-  color: #e2dedb;
-}
-/*----------------------------Map-----------------------*/
-
-
-/*----------------------------HomePage-----------------------*/
 
 /*----------------------------The team-----------------------*/
 
+.team-main {margin-top:200px;}
 .main{
   padding-top: 50px;
   margin-left: 10px;
