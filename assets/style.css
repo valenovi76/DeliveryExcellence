@@ -1,7 +1,7 @@
 /*--------------------------ColorPalette------------------*/
-/*background : #C30D4C
-background : #6400AA
-background : #E60050
+/*background : #C30D4C fucsia
+background : #6400AA purple
+background : #E60050 #E60050
 background-color : #6400AA
 color : #FFFFFF*?
 
@@ -79,6 +79,8 @@ h1{font-family: "Fjalla Ona", sans-serif;
     color:white;
 }
 /*---------------------------Contact page ----------------------*/
+
+
 .contact-pg {
   background:white;
 }
@@ -102,11 +104,13 @@ h4 {
 .fa-home{
       font-size: 3rem;
       margin-top: 50px; 
+      color:#C30D4C;
 }
 
 .fa-envelope-open-text{
       font-size: 3rem;
       margin-top: 50px;
+      color:#C30D4C;
 }
 
 .phone{
@@ -114,12 +118,23 @@ h4 {
   font-size:20px;
   font-weight: lighter;
   text-transform:uppercase;
+  color:#C30D4C;
 }
 
 .phnum{
   font-family: "Noto-sans", sans-serif;
   font-size:20px;
-  font-weight: lighter}
+  font-weight: lighter;
+  color:#333333;
+}
+
+  address {
+  font-family: "Noto-sans", sans-serif;
+  font-size:20px;
+  font-weight: lighter;
+  color:#333333;
+}
+
 /*---------------------------Contact form-----------------------*/
 .contact-main {
   text-align: center;
@@ -129,19 +144,14 @@ h4 {
   flex-grow: 0;
 }
 
-address {
-  font-family: "Noto-sans", sans-serif;
-  font-size:20px;
-  font-weight: lighter;
-}
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #aca49c;
+  color: #333333;
   font-size: 0.875em;
 }
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
+  color: #333333;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
@@ -179,39 +189,39 @@ input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholde
 }
 
 input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
+  color: #C30D4C;
 }
 
 input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: #e2dedb;
+  color: #262626;
   font-size: 0.875em;
 }
 
 input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
+  color: #C30D4C;
 }
 
 input:hover::placeholder, textarea:hover::placeholder {
-  color: #e2dedb;
+  color: #262626;
   font-size: 0.875em;
 }
 
 input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: #cbc6c1;
+  color: #C30D4C;
 }
 
 input:hover::placeholder, textarea:hover::placeholder {
-  color: #e2dedb;
+  color: #262626;
   font-size: 0.875em;
 }
 
 input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
+  color: #C30D4C;
 }
 
 body {
   font-family: 'Noto sans', sans-serif;
-  background: #e2dedb;
+  background: #fafafa;
   color: #b3aca7;
 }
 
