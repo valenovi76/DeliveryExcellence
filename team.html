@@ -15,16 +15,19 @@
       // Load Charts and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
 
-      // Draw the pie chart for Sarah's pizza when Charts is loaded.
-      google.charts.setOnLoadCallback(drawSarahChart);
+      // Draw the pie chart for Michelle's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawMichelleChart);
 
-      // Draw the pie chart for the Anthony's pizza when Charts is loaded.
-      google.charts.setOnLoadCallback(drawAnthonyChart);
+      // Draw the pie chart for the Karen's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawKarenChart);
+      
+      // Draw the pie chart for the Vale's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawValeChart);
 
-      // Callback that draws the pie chart for Sarah's pizza.
-      function drawSarahChart() {
+      // Callback that draws the pie chart for Michelle's pizza.
+      function drawMichelleChart() {
 
-        // Create the data table for Sarah's pizza.
+        // Create the data table for Michelle's pizza.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
@@ -36,22 +39,22 @@
           ['Pepperoni', 1]
         ]);
 
-        // Set options for Sarah's pie chart.
-        var options = {title:'How Much Pizza Sarah Ate Last Night',
+        // Set options for Michelle's pie chart.
+        var options = {title:'How Much Pizza Michelle Ate Last Night',
                        width:400,
                        height:300,
                        colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC']
         };
 
-        // Instantiate and draw the chart for Sarah's pizza.
-        var chart = new google.visualization.PieChart(document.getElementById('Sarah_chart_div'));
+        // Instantiate and draw the chart for Michelle's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Michelle_chart_div'));
         chart.draw(data, options);
       }
 
-      // Callback that draws the pie chart for Anthony's pizza.
-      function drawAnthonyChart() {
+      // Callback that draws the pie chart for Karen's pizza.
+      function drawKarenChart() {
 
-        // Create the data table for Anthony's pizza.
+        // Create the data table for Karen's pizza.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
@@ -63,15 +66,48 @@
           ['Pepperoni', 3]
         ]);
 
-        // Set options for Anthony's pie chart.
-        var options = {title:'How Much Pizza Anthony Ate Last Night',
+        // Set options for Karen's pie chart.
+        var options = {title:'How Much Pizza Karen Ate Last Night',
                        width:400,
                        height:300,
           colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC']
         };
 
-        // Instantiate and draw the chart for Anthony's pizza.
-        var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
+        // Instantiate and draw the chart for Karen's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Karen_chart_div'));
+        chart.draw(data, options);
+        
+      }
+        
+        // Callback that draws the pie chart for Vale's pizza.
+      function drawValeChart() {
+
+        // Create the data table for Vale's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Skills');
+        data.addColumn('number', '%');
+        data.addRows([
+          ['SQL', 2],
+          ['HTML', 2],
+          ['CSS', 2],
+          ['Lean Six Sigma', 0],
+          ['Vba', 3]
+        ]);
+
+        // Set options for Vale's pie chart.
+        var options = {title:'Valentina Novara skills',
+                       width:400,
+                       height:300,
+                       
+                       background: {
+            stroke: { color: 'yellow' },
+            
+          },
+          colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC'],
+        };
+
+        // Instantiate and draw the chart for Vale's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Vale_chart_div'));
         chart.draw(data, options);
       }
     </script>
@@ -118,26 +154,48 @@
                   <div class="row title">
                     <div class="col-12">
                           <h2 class "main_title">The team</h2>
-                          <p>We are a team of professionals, fully trained in Lean Six Sigma and Continuos Improvement</p>
+                          <h6>We are a team of professionals, fully trained in Lean Six Sigma and Continuos Improvement</h6>
                     </div>
                   </div>
-                  <div class="row shots-section">
-                        <div class="col-6 shots">
-                            <ul>
-                                <li><img src="./assets/michelle.jpg"></img><p>Lean Six Sigma Black Belt certified.Highly experience in process control and development, root cause analysis</p></li>
-                                <li><img src="./assets/karen.jpg"></img><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut dignissim sem. Praesent hendrerit posuere porttitor. Sed vel quam fringilla, convallis nulla et, tristique lorem.</p></li>
-                                <li><img src="./assets/vale.jpg"></img><p>Ut vulputate sem nec ultricies posuere. Ut accumsan sollicitudin justo, sit amet rhoncus nibh porta a. Phasellus venenatis condimentum dignissim. </p></li>
-                             </ul>
+                  <div class="row Michelle">
+                        <div class="col-sm M-pic">
+                          <img src="./assets/michelle.jpg"></img>
                         </div>
-                        <div class="col-6 graphs">
-                          <table class="columns">
-      <tr>
-        <td><div id="Sarah_chart_div" style="border: 1px solid #ccc"></div></td>
-        <td><div id="Anthony_chart_div" style="border: 1px solid #ccc"></div></td>
-      </tr>
-    </table>
- 
+                        <div class="col-sm M-text">
+                          <h6>Michelle Finnegan</h6>
+                          <p>Lean Six Sigma Black Belt certified.Highly experience in process control and development, root cause analysis</p>
                         </div>
+                        <div class="col-sm M-graph">
+                          <div id="Michelle_chart_div"></div>
+                        </div>
+                  </div>
+                  <div class="row Karen">
+                        <div class="col-sm K-pic">
+                          <img src="./assets/karen.jpg"></img>
+                        </div>
+                        <div class="col-sm K-text">
+                          <h6>Karen Corcoran</h6>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut dignissim sem. Praesent hendrerit posuere porttitor. Sed vel quam fringilla, convallis nulla et, tristique lorem.</p>
+                        </div>
+                        <div class="col-sm K-graph">
+                          <div id="Karen_chart_div" ></div>
+                        </div>
+                  </div>
+                  <div class="row Vale">
+                        <div class="col-sm V-pic">
+                          <img src="./assets/vale.jpg"></img>
+                        </div>
+                        <div class="col-sm V-text">
+                          <h6>KValentina Novara</h6>
+                          <p>Ut vulputate sem nec ultricies posuere. Ut accumsan sollicitudin justo, sit amet rhoncus nibh porta a. Phasellus venenatis condimentum dignissim. </p>
+                        </div>
+                        <div class="col-sm V-graph">
+                          <div id="Vale_chart_div"></div>
+                        </div>
+                  </div>
+                            
+                  
+                        
             </section>
           </div>
 

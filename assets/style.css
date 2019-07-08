@@ -181,6 +181,9 @@ input:hover {
 /*----------------------------The team-----------------------*/
 
 .team-main {margin-top:200px;}
+.team-main p {margin-top:10px;}
+h6 {margin-top: 40px;}
+
 .main{
   padding-top: 50px;
   margin-left: 10px;
@@ -199,14 +202,6 @@ input:hover {
 
 }
 
-.par {
-    font-family: "Nato sans", sans-serif;
-    font-weight:lighter;
-    font-size: 20;
-    color:grey;
-    background-color:#fafafa;
-    margin-left:10px;
-}
   
 img {
   height:146px;
@@ -215,8 +210,3 @@ img {
   border-radius: 50%;
 }
   
-.shots-section{
-  background:#fafafa;
-}
-
-
