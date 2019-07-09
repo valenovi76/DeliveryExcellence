@@ -6,16 +6,12 @@ background-color : #6400AA
 color : #FFFFFF*?
 
 /*----------------------------Header/Navbar-----------------------*/
-.container-fluid{margin-left: 0px;
-    margin-right: 0px;
-    padding: 0px;
-    margin-top: 100px;
-}
+
 .navbar{letter-spacing: 2px;
         font-family: "Noto sans", sans-serif;
         font-weight: lighter;
         font-size: 15px;
-        color:#6400AA;
+        color:#fafafa;
         text-align: center;
         
   
@@ -29,11 +25,15 @@ nav a {
     text-align: left;
 }
 nav a:hover {
-  color: grey;
+  color: #fafafa;
   text-decoration: none;
  }
+ 
+.logo{border-radius:50%;
+      margin:10px;
+}
 
-/*----------------------------Main Section-----------------------*/
+/*----------------------------Home Page-----------------------*/
 
 .home-page{
   margin-top:250px;
@@ -59,16 +59,22 @@ h1{font-family: "Fjalla Ona", sans-serif;
     text-transform: uppercase;
   
 }
+
+.home-page p{
+  font-family:"Noto sans", sans-serif;
+  font-weight:100;
+  color:#fafafa;
+}
 /*----------------------------Footer-----------------------*/
-.container-fluid{
-    margin-left: 0px;
-    margin-right:0px;
-    padding:0px;
+.page-footer{
+  font-family:"Noto sans", sans-serif;
+    font-weight:100;
+    font-size:20px;
+    color:white;
+    background-color:#6400AA
 }
-.footer-copyright{
-    background-color:#6400AA;
-    text-align: center;
-}
+
+
  
 .footer-copyright a {
     font-family:"Noto sans", sans-serif;
@@ -79,15 +85,18 @@ h1{font-family: "Fjalla Ona", sans-serif;
 /*---------------------------Contact page ----------------------*/
 
 
-.contact-pg {
+.contact-main{
   background:white;
+  text-align: center;
 }
 
 i{
   text-align: center;
   display: inline-block;
   width: 100%;
-  
+  font-size: 3rem;
+  margin-top: 50px;
+  color:#C30D4C;
 }
 
 h4 {
@@ -96,39 +105,20 @@ h4 {
   text-transform:uppercase;
   color:#333333;
   margin-top: 10px;
-  
-}
-.fa-phone{
-      font-size: 3rem;
-      margin-top: 50px;
-      color:#C30D4C;
+  text-align: center;
+  display: inline-block;
 }
 
-.fa-home{
-      font-size: 3rem;
-      margin-top: 50px;
-      color:#C30D4C;
-}
-
-.fa-envelope-open-text{
-      font-size: 3rem;
-      margin-top: 50px;
-      color:#C30D4C;
-}
-
-.phone{
-  font-family: "Noto-sans", sans-serif;
-  font-size:20px;
-  font-weight: lighter;
-  text-transform:uppercase;
-  color:#C30D4C;
-}
-
-.phnum{
+.ph-num{
   font-family: "Noto-sans", sans-serif;
   font-size:20px;
   font-weight: lighter;
   color:#333333;
+}
+  
+.ph-num hover{
+  color:#C30D4C;
+  text-decoration: none;
 }
 
   address {
@@ -139,9 +129,7 @@ h4 {
 }
 
 /*---------------------------Contact form-----------------------*/
-.contact-main {
-  text-align: center;
-  }
+
 
 .cont-form{
   flex-grow: 0;
@@ -149,25 +137,23 @@ h4 {
   padding-top:20px;
 }
 
-
-        
-      
 .cont-form input{
             font-family:"Fajalla Ona", sans-serif;
             text-transform:uppercase;
             text-align:left;
             width:350px; 
-            margin-top:0px;
+            padding:6px;
             height:30px;
-            
+            color:green;
+            margin-bottom:5px;
             }
         
-.cont-form  input[type=textarea] {
+#message-area  {
             height:100px;
         }
         
 .btn{margin-top:20px;
-            background-color:#C30D4C;
+    background-color:#C30D4C;
            
         }
 input:hover {
@@ -196,17 +182,21 @@ h6 {margin-top: 40px;}
     font-family: "Nato sans", sans-serif;
     font-weight:lighter;
     text-transform: uppercase;
-    font-size: 100;
+    font-size: 100px;
     color:grey;
     margin-left:10px;
 
 }
 
   
-img {
+.team-member {
   height:146px;
   width:146px;
   margin-top: 40px;
   border-radius: 50%;
 }
   
+/*-------------------------------Method---------------------*/
+.method-main{
+  margin-top:150px;
+}
