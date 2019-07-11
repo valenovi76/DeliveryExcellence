@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="./assets/style.css" type="text/css" />
-    
+ 
+ 
+<!-- Google graphs jscript-->       
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
@@ -29,21 +31,22 @@
 
         // Create the data table for Michelle's pizza.
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
+        data.addColumn('string', 'Skills');
+        data.addColumn('number', '%');
         data.addRows([
-          ['Mushrooms', 1],
-          ['Onions', 1],
-          ['Olives', 2],
-          ['Zucchini', 2],
-          ['Pepperoni', 1]
+          ['Project Management', 5],
+          ['Six Sigma', 4],
+          ['Insights', 2],
+          ['LEAN Practitioner', 2],
+          ['CI Coaching', 5],
+          ['Data Analytics', 1]
         ]);
 
         // Set options for Michelle's pie chart.
-        var options = {title:'How Much Pizza Michelle Ate Last Night',
-                       width:400,
-                       height:300,
-                       colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC']
+        var options = {
+                       colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC'],
+                       fontSize:10,
+                       
         };
 
         // Instantiate and draw the chart for Michelle's pizza.
@@ -56,21 +59,21 @@
 
         // Create the data table for Karen's pizza.
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
+        data.addColumn('string', 'Skills');
+        data.addColumn('number', '%');
         data.addRows([
-          ['Mushrooms', 2],
-          ['Onions', 2],
-          ['Olives', 2],
-          ['Zucchini', 0],
-          ['Pepperoni', 3]
+          ['Project Management', 3],
+          ['Six Sigma', 4],
+          ['Insights', 2],
+          ['LEAN Practitioner', 2],
+          ['CI Coaching', 4],
+          ['Data Analytics', 3]
         ]);
 
         // Set options for Karen's pie chart.
-        var options = {title:'How Much Pizza Karen Ate Last Night',
-                       width:400,
-                       height:300,
-          colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC']
+        var options = {
+          colors: ['#6400AA', '#B54DFF','#9500FF'],
+          fontSize:10,
         };
 
         // Instantiate and draw the chart for Karen's pizza.
@@ -95,15 +98,9 @@
         ]);
 
         // Set options for Vale's pie chart.
-        var options = {title:'Valentina Novara skills',
-                       width:400,
-                       height:300,
-                       
-                       background: {
-            stroke: { color: 'yellow' },
-            
-          },
+        var options = {
           colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC'],
+          fontSize:10,
         };
 
         // Instantiate and draw the chart for Vale's pizza.
@@ -119,7 +116,9 @@
 </head>
 <body>
 
+<!-- Bootstrap navbar -->   
         <div class="container">
+          
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #6400AA;">
                   <img class="logo"src="./assets/BTlogo.jpg" width="30" height="30" alt="Bt Logo">
                   <a class="navbar-brand" href="index.html">Delivery Excellence</a>
@@ -146,66 +145,82 @@
                       </div>
                 </nav>
         </div>
+        
 
-    
-
-         
-          <div class="container team-main">
-            <section class="team-pg">
-                  <div class="row title">
-                    <div class="col-12">
-                          <h2 class="main_title">The team</h2>
-                          <h6>We are a team of professionals, fully trained in Lean Six Sigma and Continuos Improvement</h6>
-                    </div>
-                  </div>
-                  <div class="row Michelle">
-                        <div class="col-sm M-pic">
-                          <img class="team-member" src="./assets/michelle.jpg" alt="Michelle Finnegan's picture">
-                        </div>
-                        <div class="col-sm M-text">
-                          <h6>Michelle Finnegan</h6>
-                          <p>Lean Six Sigma Black Belt certified.Highly experience in process control and development, root cause analysis</p>
-                        </div>
-                        <div class="col-sm M-graph">
-                          <div id="Michelle_chart_div"></div>
-                        </div>
-                  </div>
-                  <div class="row Karen">
-                        <div class="col-sm K-pic">
-                          <img src="./assets/karen.jpg" alt="Karen Corcoran's picture">
-                        </div>
-                        <div class="col-sm K-text">
-                          <h6>Karen Corcoran</h6>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut dignissim sem. Praesent hendrerit posuere porttitor. Sed vel quam fringilla, convallis nulla et, tristique lorem.</p>
-                        </div>
-                        <div class="col-sm K-graph">
-                          <div id="Karen_chart_div" ></div>
-                        </div>
-                  </div>
-                  <div class="row Vale">
-                        <div class="col-sm V-pic">
-                          <img src="./assets/vale.jpg" "Valentina Novara's picture">
-                        </div>
-                        <div class="col-sm V-text">
-                          <h6>Valentina Novara</h6>
-                          <p>Ut vulputate sem nec ultricies posuere. Ut accumsan sollicitudin justo, sit amet rhoncus nibh porta a. Phasellus venenatis condimentum dignissim. </p>
-                        </div>
-                        <div class="col-sm V-graph">
-                          <div id="Vale_chart_div"></div>
-                        </div>
-                  </div>
-                            
-                  
-                        
-            </section>
+          
+    <div class="container team-page">
+      <div class="row">
+                <div class="col-12">
+                    <h2>Meet the team</h2>
+                    <h6>We are a team of professionals, fully trained in Lean Six Sigma and Continuos Improvement. Also...we are fun!</h6>
+                </div>
+            </div>
+      <div class="row">
+        <div class="col-sm michelle">
+          <div class="row shot">
+            <img class="team-member-shot" src="./assets/michelle.png" alt="Michelle Finnegan's picture">
           </div>
+          <div class="row bio">
+          <h6 class="team-member-name">Michelle Finnegan</h6>
+            <p>Lean Six Sigma Black Belt certified.Highly experience in process control and development, root cause analysis</p>
+          </div>
+          <div class="row pie-title">
+            <h6>Skills</>
+          </div>
+          <div class="row pie">
+            <div id="Michelle_chart_div" style="width:300px;" fontName="Noto Sans" ;text-align= right; margin-left= 70px;></div>
+          </div>
+        </div>
+      
+        <div class="col-sm  karen">
+          <div class="row shot">
+            <img class="team-member-shot" src="./assets/karen.png" alt="Karen Corcoran picture">
+          </div>
+          <div class="row bio">
+          <h6 class="team-member-name">Karen Corcoran</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut dignissim sem. Praesent hendrerit posuere porttitor. Sed vel quam fringilla, convallis nulla et, tristique lorem.</p>
+          </div>
+          <div class="row pie-title">
+            <h6>Skills</>
+          </div>
+          <div class="row pie">
+            <div id="Karen_chart_div" style="width:300px;" fontName="Noto Sans";text-align= right; margin-left= 70px; ></div>
+          </div>
+        </div>
+        
+        <div class="col-sm  vale">
+          <div class="row shot">
+            <img class="team-member-shot" src="./assets/vale.png" "Valentina Novara's picture">
+          </div>
+          <div class="row bio">
+          <h6 class="team-member-name">Valentina Novara</h6>
+              <p>Ut vulputate sem nec ultricies posuere. Ut accumsan sollicitudin justo, sit amet rhoncus nibh porta a. Phasellus venenatis condimentum dignissim. </p>
+          </div>
+          <div class="row pie-title">
+            <h6>Skills</>
+          </div>
+          <div class="row pie">
+            <div id="Vale_chart_div" style="width:300px; fontName="Noto Sans"";text-align= right; margin-left= 70px;></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
         
-    <footer class="container-fluid font-small blue fixed-bottom">
+    <footer class="container-fluid font all blue fixed-bottom">
                 <div class="footer-copyright">
                     <a href="https://mdbootstrap.com/education/bootstrap/"> © 2018 Copyright: VNovara.com</a>
                 </div>
     </footer>
+    
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js" $('.collapse').collapse()></script>
 
 
     

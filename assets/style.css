@@ -1,4 +1,6 @@
 /*--------------------------ColorPalette------------------*/
+
+
 /*background : #C30D4C fucsia
 background : #6400AA purple
 background : #E60050 #E60050
@@ -7,196 +9,327 @@ color : #FFFFFF*?
 
 /*----------------------------Header/Navbar-----------------------*/
 
-.navbar{letter-spacing: 2px;
-        font-family: "Noto sans", sans-serif;
-        font-weight: lighter;
-        font-size: 15px;
-        color:#fafafa;
-        text-align: center;
-        
-  
+.navbar {
+  letter-spacing: 2px;
+  font-family: "Noto sans", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #fafafa;
+  text-align: center;
 }
 
-nav a {
-    font-family: "Fjalla Ona", sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    color:white;
-    text-align: left;
+.nav-link {
+  font-family: "Fjalla Ona", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  text-align: left;
 }
-nav a:hover {
-  color: #fafafa;
+
+.nav-link:hover {
+  color: white;
   text-decoration: none;
- }
- 
-.logo{border-radius:50%;
-      margin:10px;
+}
+
+.logo {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+@media (min-width: 992px) {
+  .navbar li {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
+
+
+/*----------------------------Footer-----------------------*/
+
+.page-footer {
+  font-family: "Noto sans", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #6400AA;
+}
+
+.social-icon {
+  color: #B54DFF;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.unstyled-icons {
+  display: inline-block;
+}
+
+.page-footer a {
+  color: #B54DFF;
+}
+
+.page-footer a hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footer-copyright a {
+  font-family: "Noto sans", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #B54DFF;
+  padding: 30px;
+}
+
+
+/*----------------------------Text styles-----------------------*/
+h1 {
+  font-family: "Fjalla Ona", sans-serif;
+  font-weight: 200;
+  font-size: 1000px;
+  color: white;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Nato sans", sans-serif;
+  font-weight: lighter;
+  color: grey;
+  margin-left: 10px;
+  margin-top: 150px;
+}
+
+h4 {
+  font-family: "Nato sans", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+}
+h6 {
+  font-family: "Nato sans", sans-serif;
+  margin-top: 40px;
 }
 
 /*----------------------------Home Page-----------------------*/
 
-.home-page{
-  margin-top:250px;
+.home-page {
+  margin-top: 250px;
   margin-left: 50px;
-  
 }
 
-.bckgrnd{
-  height:100vh;
-  background-image: url("../assets/bulb.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center center;
-}
-.main-content{
-  padding-top:10px;
+.bckgrnd {
+  height: 100vh;
+  background-image: url("../assets/bulbupside.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-h1{font-family: "Fjalla Ona", sans-serif;
-    font-weight: 200;
-    font-size: 1000px;
-    color:white;
-    text-transform: uppercase;
-  
-}
-
-.home-page p{
-  font-family:"Noto sans", sans-serif;
-  font-weight:100;
-  color:#fafafa;
-}
-/*----------------------------Footer-----------------------*/
-.page-footer{
-  font-family:"Noto sans", sans-serif;
-    font-weight:100;
-    font-size:20px;
-    color:white;
-    background-color:#6400AA
+.main-content {
+  padding-top: 10px;
+  margin-top: 100px;
 }
 
 
- 
-.footer-copyright a {
-    font-family:"Noto sans", sans-serif;
-    font-weight:100;
-    font-size:20px;
-    color:white;
+
+.home-page p {
+  font-family: "Noto sans", sans-serif;
+  font-weight: 100;
+  color: #fafafa;
 }
+
+
 /*---------------------------Contact page ----------------------*/
 
-
-.contact-main{
-  background:white;
+.contact-main {
+  background-image: url("../assets/contactus.jpg");
+  background-repeat: no-repeat;
+  background: cover;
   text-align: center;
 }
 
-i{
+.contact i {
   text-align: center;
   display: inline-block;
   width: 100%;
   font-size: 3rem;
   margin-top: 50px;
-  color:#C30D4C;
+  color: #C30D4C;
 }
 
-h4 {
-  font-family:"Fajalla Ona", sans-serif;
-  font-size: 20px;
-  text-transform:uppercase;
-  color:#333333;
-  margin-top: 10px;
-  text-align: center;
-  display: inline-block;
-}
-
-.ph-num{
+.ph-num {
   font-family: "Noto-sans", sans-serif;
-  font-size:20px;
+  font-size: 20px;
   font-weight: lighter;
-  color:#333333;
+  color: #333333;
 }
-  
-.ph-num hover{
-  color:#C30D4C;
+
+.ph-num hover {
+  color: #C30D4C;
   text-decoration: none;
 }
 
-  address {
+address {
   font-family: "Noto-sans", sans-serif;
-  font-size:20px;
+  font-size: 20px;
   font-weight: lighter;
-  color:#333333;
+  color: #333333;
 }
+
 
 /*---------------------------Contact form-----------------------*/
 
-
-.cont-form{
+.cont-form {
   flex-grow: 0;
-  width:400px;
-  padding-top:20px;
+  width: 400px;
+  padding-top: 20px;
 }
 
-.cont-form input{
-            font-family:"Fajalla Ona", sans-serif;
-            text-transform:uppercase;
-            text-align:left;
-            width:350px; 
-            padding:6px;
-            height:30px;
-            color:green;
-            margin-bottom:5px;
-            }
-        
-#message-area  {
-            height:100px;
-        }
-        
-.btn{margin-top:20px;
-    background-color:#C30D4C;
-           
-        }
+.cont-form input {
+  font-family: "Fajalla Ona", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  width: 350px;
+  padding: 6px;
+  height: 30px;
+  color: green;
+  margin-bottom: 5px;
+}
+
+#message-area {
+  height: 100px;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: #C30D4C;
+}
+
 input:hover {
   background: #EEEEEE;
   color: #333333;
 }
 
-.gmap {margin-top:20px;}
+.gmap {
+  margin-top: 20px;
+}
 
 
 /*----------------------------The team-----------------------*/
 
-.team-main {margin-top:200px;}
-.team-main p {margin-top:10px;}
-h6 {margin-top: 40px;}
-
-.main{
-  padding-top: 50px;
-  margin-left: 10px;
-  
+.team-page {
+  margin-top: 100px;
+  text-align: center;
 }
 
-
-
-.title{
-    font-family: "Nato sans", sans-serif;
-    font-weight:lighter;
-    text-transform: uppercase;
-    font-size: 100px;
-    color:grey;
-    margin-left:10px;
-
-}
-
-  
-.team-member {
-  height:146px;
-  width:146px;
+.team-member-shot {
+  height: 146px;
+  width: 146px;
   margin-top: 40px;
   border-radius: 50%;
 }
-  
+
+.team-member-name {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.bio {
+  height: 300px;
+}
+
+.pie-title {
+  display: block;
+}
+
+
 /*-------------------------------Method---------------------*/
-.method-main{
-  margin-top:150px;
+
+.define-text {
+  border: 1px solid;
+  border-color: #DDDDDD;
+  border-top: none;
+  border-right: none;
+}
+
+.meausure-img {
+  border: 1px solid;
+  border-color: #DDDDDD;
+  border-top: none;
+  border-left: none;
+}
+
+.analyse-text {
+  border: 1px solid;
+  border-color: #DDDDDD;
+  border-top: none;
+  border-right: none;
+}
+
+.improve-img {
+  border: 1px solid;
+  border-color: #DDDDDD;
+  border-top: none;
+  border-left: none;
+}
+
+.control-text {
+  border: 1px solid;
+  border-color: #DDDDDD;
+  border-top: none;
+  border-right: none;
+}
+
+.method-item-number {
+  font-size: 5.584rem;
+  color: #e1e1e1;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-127%, -21%);
+  -ms-transform: translate(-127%, -21%);
+  transform: translate(-127%, -21%);
+  font-family: Fjalla Ona, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 800;
+  background-color: #fff;
+}
+
+.method-img {
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 50%;
+}
+
+
+/*-------------------------Portfolio---------------------------*/
+
+.portfolio-bckgrnd {
+  margin-top: 60px;
+}
+
+.left-text {
+  border: 5px solid;
+  border-color: #6400AA;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.left-text:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/cogwheel.png");
+  background-size: contain;
+  background-color: transparent;
+  position: absolute;
+  right: -16px;
+  top: 0;
+}
+
+.year {
+  text-align: center;
 }
