@@ -35,17 +35,17 @@
         data.addColumn('number', '%');
         data.addRows([
           ['Project Management', 5],
-          ['Six Sigma', 4],
+          ['Six ∑', 4],
           ['Insights', 2],
-          ['LEAN Practitioner', 2],
+          ['Lean Pract.', 2],
           ['CI Coaching', 5],
           ['Data Analytics', 1]
         ]);
 
         // Set options for Michelle's pie chart.
-        var options = {
-                       colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC'],
-                       fontSize:10,
+        var options = {legend:'left',
+                       colors: ['#6300AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC'],
+                       fontSize:11,
                        
         };
 
@@ -63,17 +63,18 @@
         data.addColumn('number', '%');
         data.addRows([
           ['Project Management', 3],
-          ['Six Sigma', 4],
+          ['Six ∑', 4],
           ['Insights', 2],
-          ['LEAN Practitioner', 2],
+          ['Lean Pract.', 2],
           ['CI Coaching', 4],
           ['Data Analytics', 3]
         ]);
 
         // Set options for Karen's pie chart.
         var options = {
-          colors: ['#6400AA', '#B54DFF','#9500FF'],
-          fontSize:10,
+          legend:'left',
+          colors: ['#6300AA', '#B54DFF','#9500FF'],
+          fontSize:11,
         };
 
         // Instantiate and draw the chart for Karen's pizza.
@@ -93,14 +94,15 @@
           ['SQL', 2],
           ['HTML', 2],
           ['CSS', 2],
-          ['Lean Six Sigma', 0],
+          ['Six ∑', 0],
           ['Vba', 3]
         ]);
 
         // Set options for Vale's pie chart.
         var options = {
-          colors: ['#6400AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC'],
-          fontSize:10,
+          legend:'left',
+          colors: ['#6300AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC'],
+          fontSize:11,
         };
 
         // Instantiate and draw the chart for Vale's pizza.
@@ -117,7 +119,7 @@
 <body>
 
 <!-- Bootstrap navbar -->   
-                <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #6400AA;">
+                <nav class="navbar fixed-left navbar-expand-lg navbar-dark" style="background-color: #6300AA;">
                     <div class="container">
                   <img class="logo"src="./assets/BTlogo.jpg" width="30" height="30" alt="Bt Logo">
                   <a class="navbar-brand" href="index.html">Delivery Excellence</a>
@@ -147,27 +149,27 @@
         
 
           
-    <div class="container team-page">
-      <div class="row">
+    <div class="container main-content">
+      <div class="row team-page">
                 <div class="col-12">
                     <h2>Meet the team</h2>
-                    <h6>We are a team of professionals, fully trained in Lean Six Sigma and Continuos Improvement. Also...we are fun!</h6>
+                    <h4>We are a team of professionals, fully trained in Lean Six Sigma and Continuos Improvement. Also...we are fun!</h4>
                 </div>
             </div>
       <div class="row">
         <div class="col-sm michelle">
-          <div class="row shot">
+          <div class="row" id:"shot">
             <img class="team-member-shot" src="./assets/michelle.png" alt="Michelle Finnegan's picture">
           </div>
           <div class="row bio">
-          <h6 class="team-member-name">Michelle Finnegan</h6>
-            <p>Lean Six Sigma Black Belt certified.Highly experience in process control and development, root cause analysis</p>
+          <h4 class="team-member-name">Michelle Finnegan</h4>
+            <p class="team-p">Lean Six Sigma Black Belt certified.Highly experience in process control and development, root cause analysis</p>
           </div>
           <div class="row pie-title">
-            <h6>Skills</>
+            <h4>Skills</h4>
           </div>
           <div class="row pie">
-            <div id="Michelle_chart_div" style="width:300px;" fontName="Noto Sans" ;text-align= right; margin-left= 70px;></div>
+            <div id="Michelle_chart_div" style="width:300px"; fontName="Noto Sans" ;text-align="left"; margin-left= 0px;></div>
           </div>
         </div>
       
@@ -176,14 +178,14 @@
             <img class="team-member-shot" src="./assets/karen.png" alt="Karen Corcoran picture">
           </div>
           <div class="row bio">
-          <h6 class="team-member-name">Karen Corcoran</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut dignissim sem. Praesent hendrerit posuere porttitor. Sed vel quam fringilla, convallis nulla et, tristique lorem.</p>
+          <h4 class="team-member-name">Karen Corcoran</h4>
+            <p class="team-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut dignissim sem. Praesent hendrerit posuere porttitor. Sed vel quam fringilla, convallis nulla et, tristique lorem.</p>
           </div>
           <div class="row pie-title">
-            <h6>Skills</>
+            <h4>Skills</h4>
           </div>
           <div class="row pie">
-            <div id="Karen_chart_div" style="width:300px;" fontName="Noto Sans";text-align= right; margin-left= 70px; ></div>
+            <div id="Karen_chart_div" style="width:300px"; fontName="Noto Sans";text-align= left; margin-left= 0px; ></div>
           </div>
         </div>
         
@@ -192,14 +194,14 @@
             <img class="team-member-shot" src="./assets/vale.png" "Valentina Novara's picture">
           </div>
           <div class="row bio">
-          <h6 class="team-member-name">Valentina Novara</h6>
-              <p>Ut vulputate sem nec ultricies posuere. Ut accumsan sollicitudin justo, sit amet rhoncus nibh porta a. Phasellus venenatis condimentum dignissim. </p>
+          <h4 class="team-member-name">Valentina Novara</h4>
+              <p class="team-p">Ut vulputate sem nec ultricies posuere. Ut accumsan sollicitudin justo, sit amet rhoncus nibh porta a. Phasellus venenatis condimentum dignissim. </p>
           </div>
           <div class="row pie-title">
-            <h6>Skills</>
+            <h4>Skills</h4>
           </div>
           <div class="row pie">
-            <div id="Vale_chart_div" style="width:300px; fontName="Noto Sans"";text-align= right; margin-left= 70px;></div>
+            <div id="Vale_chart_div" style="width:300px"; fontName="Noto Sans";text-align=left ; margin-left= 0px;></div>
           </div>
         </div>
       </div>
@@ -208,11 +210,51 @@
 
 
         
-    <footer class="container-fluid font all blue fixed-bottom">
-                <div class="footer-copyright">
-                    <a href="https://mdbootstrap.com/education/bootstrap/"> © 2018 Copyright: VNovara.com</a>
-                </div>
-    </footer>
+      <!-- Bootstrap Footer -->
+      <footer class="page-footer font-small  pt-4">
+         <div class="container-fluid text-center text-md-left">
+            <div class="row">
+               <div class="col-sm">
+                  <h5 class="text-uppercase">Social</h5>
+                  <ul class="list-unstyled">
+                  <li class="unstyled-icons">
+                     <a class="social-icon" href="https://www.linkedin.com/company/bt" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li class="unstyled-icons">
+                     <a class="social-icon" href="https://www.facebook.com/BTUK/"  title="FaceBook"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li class="unstyled-icons">
+                     <a class="social-icon" href="https://intra.bt.com/" title="BT Intranet"><i class="fas fa-network-wired"></i></a>
+                  </li>
+                  </ul>
+               </div>
+               <div class="col-sm">
+                  <h5 class="text-uppercase">Legal</h5>
+                  <ul class="list-unstyled">
+                     <li>
+                        <a   href="https://intra.bt.com/bt/group/socialmedia/Pages/Social-media-guidelines.aspx">Social Media Policy</a>
+                     </li>
+                     <li>
+                        <a  href="https://myprofile.bt.com/person.aspx">Information Provider: Valentina Novara</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-sm">
+                  <h5 class="text-uppercase">Useful Links</h5>
+                  <ul class="list-unstyled">
+                     <li>
+                        <a   href="contact.html">Contact Us</a>
+                     </li>
+                     <li>
+                        <a   href="portfolio.html">Portfolio</a>
+                  </ul>
+               </div>
+            </div>
+         </div>
+            <div class="footer-copyright text-right py-3">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> VNovara.com</a>
+         </div>
+      </footer>
     
 <!-- Bootstrap core JavaScript
     ================================================== -->

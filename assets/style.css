@@ -86,14 +86,17 @@ color : #FFFFFF*?
 h1 {
     font-family: "Noto Sans", sans-serif;
     font-weight: 200;
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     text-transform: uppercase;
+    padding-top:150px;
+    padding-bottom:20px; 
+    padding-left:100px;
 }
 h2 {
   font-family: "Nato sans", sans-serif;
   font-weight: lighter;
-  color: grey;
+  color:#8C8C8C;
   margin-top: 150px;
   text-align:center;
 }
@@ -101,7 +104,7 @@ h2 {
 h3 {
   font-family: "Nato sans", sans-serif;
   font-weight: lighter;
-  color: grey;
+  color:  #38403B;
   margin-top: 10px;
   text-align:center;
 }
@@ -109,8 +112,7 @@ h3 {
 h4 {
   font-family: "Nato sans", sans-serif;
   font-size: 20px;
-  text-transform: uppercase;
-  color: #333333;
+  color: #8C8C8C;
   margin-top: 30px;
   text-align: center;
   display: inline-block;
@@ -119,36 +121,48 @@ h6 {
   font-family: "Nato sans", sans-serif;
   margin-top: 40px;
   text-align:center;
+  font-weight: 600;
+  color:  #38403B;
 }
+
 
 /*----------------------------Home Page-----------------------*/
 
-.home-page {
-  margin-top: 250px;
-  margin-left: 50px;
-}
 
 .bckgrnd {
-  height: 100vh;
+  height:100%;
   background-image: url("../assets/bulbupside.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center center;  
+  min-height: 650px;
 }
 
-.main-content {
-  padding-top: 10px;
-
+.home {
+  
+  margin:0;
+  padding:0;
+  position:relative;
+  height:90vh;
 }
 
 
-
-.home-page p {
+.home-p{
   font-family: "Noto sans", sans-serif;
   font-weight: 100;
-  color: #fafafa;
+  color: white;
+  margin-bottom:0px;
+  padding-left:100px;
 }
 
+.home-p2{
+  font-family: "Noto sans", sans-serif;
+  font-weight: 100;
+  color: white;
+  margin-bottom:0px;
+  padding-bottom:100px;
+  padding-left:100px;
+}
 
 /*---------------------------Contact page ----------------------*/
 
@@ -238,13 +252,28 @@ input:hover {
   width: 146px;
   margin-top: 40px;
   border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
+#shot{
+  position:absolute; 
+  width:100%; 
+  height:100%
+}
 .team-member-name {
   text-align: center;
   display: block;
   width: 100%;
   padding-bottom: 30px;
+
+}
+
+.team-p {
+  color:black;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
 }
 
 .bio {
