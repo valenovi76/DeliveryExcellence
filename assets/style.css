@@ -18,6 +18,9 @@ color : #FFFFFF*?
   text-align: center;
 }
 
+.navbar-brand{
+  margin-right:0px;
+}
 .nav-link {
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
@@ -85,19 +88,21 @@ color : #FFFFFF*?
 /*----------------------------Text styles-----------------------*/
 h1 {
     font-family: "Noto Sans", sans-serif;
-    font-weight: 200;
-    font-size: 50px;
+    font-weight:400;
+    font-size: 30px;
     color: white;
     text-transform: uppercase;
-    padding-top:150px;
-    padding-bottom:20px; 
-    padding-left:100px;
+}
+
+.bckgrnd h1{
+  margin-top:150px;
+  padding:0 50px;
 }
 h2 {
   font-family: "Nato sans", sans-serif;
   font-weight: lighter;
   color:#8C8C8C;
-  margin-top: 150px;
+  margin-top: 100px;
   text-align:center;
 }
 
@@ -115,8 +120,9 @@ h4 {
   color: #8C8C8C;
   margin-top: 30px;
   text-align: center;
-  display: inline-block;
+  
 }
+
 h6 {
   font-family: "Nato sans", sans-serif;
   margin-top: 40px;
@@ -128,47 +134,34 @@ h6 {
 
 /*----------------------------Home Page-----------------------*/
 
+body {
+  background-color:#6400AA;
+}
 
 .bckgrnd {
-  height:100%;
+  height:80vh;
   background-image: url("../assets/bulbupside.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;  
-  min-height: 650px;
-}
-
-.home {
-  
-  margin:0;
-  padding:0;
-  position:relative;
-  height:90vh;
 }
 
 
-.home-p{
+
+.bckgrnd p{
   font-family: "Noto sans", sans-serif;
-  font-weight: 100;
+  font-weight:400;
   color: white;
   margin-bottom:0px;
-  padding-left:100px;
-}
-
-.home-p2{
-  font-family: "Noto sans", sans-serif;
-  font-weight: 100;
-  color: white;
-  margin-bottom:0px;
-  padding-bottom:100px;
-  padding-left:100px;
+  padding:0 50px;
+  font-size:18px;
 }
 
 /*---------------------------Contact page ----------------------*/
 
 .main-content{
   /*background-image: url("");*/
-  padding-top: 100px;
+  background-color:white;
 }
 
 
@@ -205,7 +198,6 @@ address {
 
 .cont-form {
   flex-grow: 0;
-  width: 400px;
   padding-top: 20px;
   padding-left:5px;
   padding-right:5px;
@@ -215,9 +207,8 @@ address {
   font-family: "Fajalla Ona", sans-serif;
   text-transform: uppercase;
   text-align: left;
-  width: 350px;
+  width: 100%;
   padding: 6px;
-  height: 30px;
   color: green;
   margin-bottom: 5px;
 }
@@ -260,7 +251,8 @@ input:hover {
 #shot{
   position:absolute; 
   width:100%; 
-  height:100%
+  height:100%;
+  margin:0px;
 }
 .team-member-name {
   text-align: center;
@@ -271,9 +263,12 @@ input:hover {
 }
 
 .team-p {
+  text-align: center;
   color:black;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
+  margin-left: 10px;
+  margin-right:10px;
 }
 
 .bio {
@@ -282,6 +277,7 @@ input:hover {
 
 .pie-title {
   display: block;
+  text-align: center;
 }
 
 
@@ -348,25 +344,7 @@ input:hover {
   margin-top: 60px;
 }
 
-.left-text {
-  border: 3px solid;
-  border-color: #EEEEEE;
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
-}
 
-.left-text:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url("../assets/purplegear.png");
-  background-size: contain;
-  background-color: white;
-  position: absolute;
-  right: -17px;
-  top: 0;
-}
 
 .right-text{
   padding-left:30px;
@@ -376,4 +354,23 @@ input:hover {
     padding-right: 10px;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+@media (min-width:420px) {
+  .left-text {
+  border: 3px solid;
+  border-color: #EEEEEE;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;}
+  .left-text:before {
+   content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/purplegear.png");
+  background-size: contain;
+  background-color: white;
+  position: absolute;
+  right: -17px;
+  top: 0;
 }
