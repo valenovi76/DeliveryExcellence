@@ -47,7 +47,7 @@ color : #FFFFFF*?
   }
 }
 
-@media (min-width:375px){
+@media (min-width:375pxc){
   .navbar-brand{
     font-size:1.25rem;
   }
@@ -172,7 +172,7 @@ body {
 
 
 .contact i {
-  text-align: left;
+  text-align: center;
   display: inline-block;
   width: 100%;
   font-size: 3rem;
@@ -180,12 +180,16 @@ body {
   color: #EEEEEE;
 }
 
+.phone{text-align: center;}
+
 .ph-num {
   font-family: "Noto-sans", sans-serif;
   font-size: 20px;
   font-weight: lighter;
   color: #333333;
+  
 }
+
 
 .ph-num hover {
   color: #C30D4C;
@@ -197,6 +201,7 @@ address {
   font-size: 20px;
   font-weight: lighter;
   color: #333333;
+  text-align: center;
 }
 
 
@@ -207,6 +212,7 @@ address {
   padding-top: 20px;
   padding-left:5px;
   padding-right:5px;
+  text-align: center;
 }
 
 .cont-form input {
@@ -226,6 +232,15 @@ address {
 .btn {
   margin-top: 20px;
   background-color: #666666;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+    border-color: #666666;
+}
+
+.btn-primary:hover {
+  background-color: #6400AA;
 }
 
 input:hover {
