@@ -1,4 +1,4 @@
-/*--------------------------ColorPalette------------------*/
+/*--ColorPalette--*/
 
 
 /*background : #C30D4C fucsia
@@ -7,7 +7,7 @@ background : #E60050 #E60050
 background-color : #6400AA
 color : #FFFFFF*?
 
-/*----------------------------Header/Navbar-----------------------*/
+/*--Header/Navbar--*/
 
 .navbar {
   letter-spacing: 2px;
@@ -53,7 +53,7 @@ color : #FFFFFF*?
   }
 }
 
-/*----------------------------Footer-----------------------*/
+/*--Footer--*/
 
 .page-footer {
   font-family: "Noto sans", sans-serif;
@@ -91,7 +91,7 @@ color : #FFFFFF*?
 }
 
 
-/*----------------------------Text styles-----------------------*/
+/*--Text styles--*/
 h1 {
     font-family: "Noto Sans", sans-serif;
     font-weight:400;
@@ -138,7 +138,7 @@ h6 {
 }
 
 
-/*----------------------------Home Page-----------------------*/
+/*--Home Page--*/
 
 body {
   background-color:#6400AA;
@@ -146,7 +146,7 @@ body {
 
 .bckgrnd {
   height:80vh;
-  background-image: url("../assets/images/bulbupside.jpg");
+  background-image: url("../images/bulbupside.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;  
@@ -163,7 +163,7 @@ body {
   font-size:18px;
 }
 
-/*---------------------------Contact page ----------------------*/
+/*--Contact page --*/
 
 .main-content{
   /*background-image: url("");*/
@@ -205,7 +205,15 @@ address {
 }
 
 
-/*---------------------------Contact form-----------------------*/
+/*--Contact form--*/
+
+.content-bckgrnd{
+  
+  background-image: url("../images/contactus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; 
+}
 
 .cont-form {
   flex-grow: 0;
@@ -218,7 +226,7 @@ address {
 .cont-form input {
   font-family: "Fajalla Ona", sans-serif;
   text-transform: uppercase;
-  text-align: left;
+  text-align:center;
   width: 100%;
   padding: 6px;
   color: green;
@@ -260,7 +268,7 @@ input:invalid {
 }
 
 
-/*----------------------------The team-----------------------*/
+/*--The team--*/
 
 .team-page { 
   text-align: center;
@@ -309,7 +317,7 @@ input:invalid {
 }
 
 
-/*-------------------------------Method---------------------*/
+/*--Method--*/
 
 .define-text {
   border: 1px solid;
@@ -354,7 +362,7 @@ input:invalid {
   -webkit-transform: translate(-127%, -21%);
   -ms-transform: translate(-127%, -21%);
   transform: translate(-127%, -21%);
-  font-family: Noto Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Noto Sans, sans-serif;
   font-weight: 800;
   background-color: #fff;
 }
@@ -366,11 +374,9 @@ input:invalid {
 }
 
 
-/*-------------------------Portfolio---------------------------*/
+/*--Portfolio--*/
 
-.portfolio-bckgrnd {
-  margin-top: 60px;
-}
+
 
 
 
@@ -395,7 +401,7 @@ input:invalid {
    content: "";
   width: 30px;
   height: 30px;
-  background-image: url("../assets/images/purplegear.png");
+  background-image: url("../images/purplegear.png");
   background-size: contain;
   background-color: white;
   position: absolute;
