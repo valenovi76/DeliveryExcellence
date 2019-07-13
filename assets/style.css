@@ -20,6 +20,7 @@ color : #FFFFFF*?
 
 .navbar-brand{
   margin-right:0px;
+  font-size: 1rem;
 }
 .nav-link {
   font-family: "Noto Sans", sans-serif;
@@ -46,6 +47,11 @@ color : #FFFFFF*?
   }
 }
 
+@media (min-width:375px){
+  .navbar-brand{
+    font-size:1.25rem;
+  }
+}
 
 /*----------------------------Footer-----------------------*/
 
@@ -102,7 +108,7 @@ h2 {
   font-family: "Nato sans", sans-serif;
   font-weight: lighter;
   color:#8C8C8C;
-  margin-top: 100px;
+  margin-top: 150px;
   text-align:center;
 }
 
