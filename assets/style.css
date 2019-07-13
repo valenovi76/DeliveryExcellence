@@ -146,7 +146,7 @@ body {
 
 .bckgrnd {
   height:80vh;
-  background-image: url("../assets/bulbupside.jpg");
+  background-image: url("../assets/images/bulbupside.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;  
@@ -395,7 +395,7 @@ input:invalid {
    content: "";
   width: 30px;
   height: 30px;
-  background-image: url("../assets/purplegear.png");
+  background-image: url("../assets/images/purplegear.png");
   background-size: contain;
   background-color: white;
   position: absolute;
