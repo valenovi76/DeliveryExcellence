@@ -12,16 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     
-    <!--<script type="text/javascript">var email = document.getElementById("mail");
-
-    email.addEventListener("input", function (event) {
-    if (email.validity.typeMismatch) {
-    email.setCustomValidity("I expect an e-mail, darling!");
-    } else {
-    email.setCustomValidity("");
-        }
-        });
-     </script> -->
      
     <title>Contact Us</title>
 </head>
@@ -86,13 +76,13 @@
             <div class="col-md email">
                         <i class="fas fa-envelope-open-text"></i>
                         <h4>Email Us</h4>
-                            <div class="cont-form">
-                                <input type="text" name="NameSurname" placeholder="Name and Surname" >
-                                <input type="number" name="Phone Number" placeholder="Phone Number">
-                                <input type="email" id="mail" name="mail" placeholder="Email">
-                                <input type="text" name="mess" id="message-area" placeholder="Message">
+                            <form class="cont-form">
+                                <input type="text" name="NameSurname" placeholder="Name and Surname" required>
+                                <input type="number" name="Phone Number" placeholder="Phone Number" required>
+                                <input type="email" id="mail" name="mail" placeholder="Email" required>
+                                <input type="text" name="mess" id="message-area" placeholder="Message" required>
                                 <button class="btn btn-primary" type="submit">Button</button>
-            </div>
+            </form>
                     </div>
         </div>           
     </div>

@@ -146,12 +146,16 @@ body {
 
 .bckgrnd {
   height:80vh;
-  background-image: url("../images/bulbupside.jpg");
+  background-image: url("../images/journey2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;  
 }
 
+.overlay {
+  background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 80vh;}
 
 
 .bckgrnd p{
@@ -161,6 +165,13 @@ body {
   margin-bottom:0px;
   padding:0 50px;
   font-size:18px;
+}
+
+.btn-contact {
+  margin-top: 20px;
+    background-color: #666666;
+    margin-bottom: 30px;
+    margin-left: 45px;
 }
 
 /*--Contact page --*/
@@ -207,13 +218,6 @@ address {
 
 /*--Contact form--*/
 
-.content-bckgrnd{
-  
-  background-image: url("../images/contactus.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; 
-}
 
 .cont-form {
   flex-grow: 0;
@@ -224,13 +228,13 @@ address {
 }
 
 .cont-form input {
-  font-family: "Fajalla Ona", sans-serif;
+  font-family: "Noto sans", sans-serif;
   text-transform: uppercase;
   text-align:center;
   width: 100%;
   padding: 6px;
-  color: green;
   margin-bottom: 5px;
+  border: 1px solid black;
 }
 
 #message-area {
@@ -251,17 +255,16 @@ address {
   background-color: #6400AA;
 }
 
+
+
 input:hover {
   background: #EEEEEE;
   color: #333333;
 }
 
-input:invalid {
-  border: 2px dashed red;
 
-
-}input:valid {
-  border: 2px solid green;
+input:valid {
+  border: 1px solid black;
 }
 .gmap {
   margin-top: 20px;
@@ -324,6 +327,7 @@ input:invalid {
   border-color: #DDDDDD;
   border-top: none;
   border-right: none;
+  padding-bottom: 20px;
 }
 
 .meausure-img {
@@ -331,6 +335,7 @@ input:invalid {
   border-color: #DDDDDD;
   border-top: none;
   border-left: none;
+ 
 }
 
 .analyse-text {
@@ -338,6 +343,7 @@ input:invalid {
   border-color: #DDDDDD;
   border-top: none;
   border-right: none;
+  padding-bottom: 20px;
 }
 
 .improve-img {
@@ -345,6 +351,7 @@ input:invalid {
   border-color: #DDDDDD;
   border-top: none;
   border-left: none;
+  
 }
 
 .control-text {
@@ -352,6 +359,7 @@ input:invalid {
   border-color: #DDDDDD;
   border-top: none;
   border-right: none;
+  padding-bottom: 20px;
 }
 
 .method-item-number {
@@ -368,9 +376,10 @@ input:invalid {
 }
 
 .method-img {
-  display: block;
-  margin: 30px auto 20px auto;
-  width: 35%;
+    display: block;
+    margin: 30px auto 30px auto;
+    width: 35%;
+    padding-top: 30px;
 }
 
 
