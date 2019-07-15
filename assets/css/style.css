@@ -88,6 +88,7 @@ color : #FFFFFF*?
   font-size: 20px;
   color: #B54DFF;
   padding: 30px;
+  display:inline-block;
 }
 
 
@@ -298,12 +299,7 @@ input:valid {
   display: block;
 }
 
-#shot{
-  position:absolute; 
-  width:100%; 
-  height:100%;
-  margin:0px;
-}
+
 .team-member-name {
   text-align: center;
   display: block;
@@ -329,6 +325,7 @@ input:valid {
   display: block;
   text-align: center;
 }
+
 
 
 /*--Method--*/
