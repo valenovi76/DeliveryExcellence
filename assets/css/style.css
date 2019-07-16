@@ -278,9 +278,6 @@ input:hover {
 input:valid {
   border: 1px solid black;
 }
-.gmap {
-  margin-top: 20px;
-}
 
 
 /*--The team--*/
@@ -362,6 +359,9 @@ input:valid {
   
 }
 
+.control{
+  padding-bottom: 40px;
+}
 .control-text {
   border: 1px solid;
   border-color: #DDDDDD;
@@ -391,6 +391,11 @@ input:valid {
 }
 
 
+@media(max-width: 600px){
+  .method-img{
+  display: none;}
+}
+
 /*--Portfolio--*/
 
 
@@ -405,6 +410,10 @@ input:valid {
     padding-right: 10px;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.order-validation{
+  padding-bottom: 30px;
 }
 
 @media (min-width:420px) {
