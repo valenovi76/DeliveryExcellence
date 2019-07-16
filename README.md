@@ -4,13 +4,12 @@ User-Centric Frontend Development Milestone Project - Code Institute
 
 ### Table of Contents
 
-- Demo
+- [Demo](#Demo)
 - [Summary](#Website-summary)
 - [UX](#UX)
 - [Testing](#Testing)
 - [Page Notes](#Page-Notes)
 - [Technologies](#Technologies)
-- [Future Releases(#Future-Releases)
 - [Deployment](#Deployment)
 - [Acknowledgements](#Acknowledgements)
 - [Media](#Media)
