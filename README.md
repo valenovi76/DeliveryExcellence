@@ -1,28 +1,31 @@
-1.	Website summary
+
+________________________________________
+Website summary
 The site is the showcase window for a relatively new team in our company. 
-We conducted a an internal Voice of the Customer series of meeting and the findings lead us to identify the below business purpose for the site
+We conducted a an internal Voice of the Customer series of meeting and the findings lead us to identify the business purpose for the site
 The team uses lean Six Sigma and Continuous Improvement (CI) tools to advance productivity across the business. The purpose of the site is to promote it as the “place to go” when a structured, data based approach is needed to improve performance, ultimately generating more projects requests.
 
 Since the above mentioned tools and techniques (Lean Six Sigma and CI) can be quite complicated and cumbersome, the site had to be catchy and fun but at the same time give an idea of professionalism and clarity where the methodology is explained. 
 It also had to offer the option to get in touch multiple times, in effort to increase work stream.
 
-2.	UX
+________________________________________
+UX
 Using Customer Experience Mapping techniques, I created a “customer persona” profile, to identify the site’s audience, their needs, demographic, expectations and so on.
 A typical user will be a company employee, seeking to improve the company’s productivity identifying possible issues in their work processes and workflows. 
 They will want to understand what the Delivery Excellence team does, how they do it and have few examples of what they achieved so far.
 They will need to be able to contact the team easily once they have made up their mind.
-
-The demographic is quite advanced >50 years age gap.
+The demographic is quite advanced placing the website's audience in the >50 years age gap.
 The site will be internal, so they will expect a continuity with the company intranet “feel”. This will translate in precise guidelines in terms of branding (colours palette, position of logo etc…) and a more old-fashioned architecture with a static, linear display of the site pages. A parallax technique, however trendy, would be out place.  
 
+________________________________________
+Testing
 
-3.	Testing
-•	User Testing
+User Testing
 All pages functions and information was reviewed by colleagues and peers with follow up on their feedback.
  All the links to social media have been tested and are live and working, they also do open in a different tab to ensure the site flow is not disrupted The link to the company Intranet does work when on company’s connection, it cannot however be open when on a generic connection, in line with company’s security policy.
 The Submit button, on the contact form, is not connected to any database at the moment, however, the form is built using specific input fields for specific set of data (email for email, number for phone number and so on) and the attribute “required” ,ensures the correct data is gathered. n error message, alerts the users in case the wrong data is entered, achieving two goals: collection of meaningful, clean data for later use and a smooth customer experience.
 
-•	Browser Testing
+Browser Testing
 
 The site was tested on the following browsers
 •	Google Chrome,
@@ -38,26 +41,7 @@ The site was also tested on different devices.
 •	Samsung Galaxy S7 & S10+,
 •	iPhone & Ipad (Note the testing on Ipad was limited to the inspection on Google Chrome Developer for lack of actual device).
 
-HTML Site testing
-1.	Submission of html codes for index page on https://validator.w3.org/
-5 errors found: 1 only on my code, 4 on jscript for bootstrap navbar collapse
-Fixed mine 
-2.	Submission of html codes for contact page on https://validator.w3.org/
-5 errors found: fixed frameborder on iframe, the other erros/warning are on jscript for bootstrap navbar collapse
-3.	Submission of html codes for method page on https://validator.w3.org/
-4 errors on jscript for bootstrap navbar collapse
-4.	Submission of html codes for portfolio page on https://validator.w3.org/
-4 errors on jscript for bootstrap navbar collapse
-5.	Submission of html codes for team page on https://validator.w3.org/
-46 errors on jscript for bootstrap navbar collapse
-45 errors on google graphs and jsquery not fixed 
-One alt= missing on Valentina Novara’s picture, fixed
 
-CSS Site testing https://jigsaw.w3.org/css-validator/
-Submission of CSS code 
-3 errors found 
-One typo on px dimension, fixed , width property to be fixed, a parse error fixed
-3 warnings
 Vendor error : There is nothing you can do to validate vendor extensions except to not use them. Please explain to your client that there is nothing you can do about this since those errors will help support browser compatibility efforts. The validator only validates against valid code. The vendor extensions are proprietary code. As such it will always be invalid.
 
 
