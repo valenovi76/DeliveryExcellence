@@ -20,6 +20,9 @@ ________________________________________
 ## Demo
 A live demo can be found [Here](https://valenovi76.github.io/DeliveryExcellence/index.html)
 
+Here is how the site will look on different devices
+![responsive_site](..images/responsive_site.jpg)
+
 ________________________________________
 ## Website-summary
 The site is the showcase window for a relatively new team in our company. 
@@ -68,8 +71,11 @@ Vendor error : There is nothing you can do to validate vendor extensions except 
 ________________________________________
 ## Page-notes
 
-
-
+### [index.html](https://valenovi76.github.io/DeliveryExcellence/index.html)
+### [team.html](https://valenovi76.github.io/DeliveryExcellence/team.html)
+### [method.html](https://valenovi76.github.io/DeliveryExcellence/method.html)
+### [portfolio.html](https://valenovi76.github.io/DeliveryExcellence/portfolio.html)
+### [contact.html](https://valenovi76.github.io/DeliveryExcellence/contact.html)
 ________________________________________
 ## Technologies
 •	HTML

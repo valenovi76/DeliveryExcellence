@@ -435,3 +435,10 @@ input:valid {
   top: 0;
 }
 }
+
+.fa-download{
+  color: #6400AA;
+  font-size: 30px;
+  padding: 5px;
+ display:inline-block;
+}
