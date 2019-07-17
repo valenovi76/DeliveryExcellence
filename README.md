@@ -40,7 +40,7 @@ Since the above mentioned tools and techniques (Lean Six Sigma and CI) can be qu
 
 Using Customer Experience Mapping techniques, I created a “customer persona” profile, to identify the site’s audiences, their needs, demographic, expectations and so on. A typical user will be a company employee, seeking to improve the company’s productivity identifying possible issues in their work processes and workflows. They will want to understand what the Delivery Excellence team does, how they do it, the skillset they have and see  a few examples of what they achieved so far, with the option to download the projects documents. They will need to be able to contact the team easily once they have made up their mind. The demographic is quite advanced placing the website's audience in the >50 years age gap. The site will be internal, so they will expect a continuity with the company intranet “feel”. This will translate in precise guidelines in terms of branding (colour palette, position of logo etc…) and a more old-fashioned architecture with a static, linear display of the site pages. A parallax technique, however trendy, would be out place.
 
-These are the orginal MockUps
+These are the orginal MockUps ![mockups](https://raw.githubusercontent.com/valenovi76/DeliveryExcellence/master/assets/wireframes/)
 
 ----------
 
