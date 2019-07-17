@@ -93,7 +93,6 @@
       }
       
       
-      $('.collapse').collapse();
-      
+
       
       
