@@ -43,7 +43,7 @@ color : #FFFFFF*/
 
 /* media query to take care of different devices sizes*/
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .navbar li {
         margin-left: 2em;
         margin-right: 1em;

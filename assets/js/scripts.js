@@ -20,16 +20,16 @@
         data.addRows([
           ['Project Management', 5],
           ['Six ∑', 4],
-          ['Insights', 2],
           ['Lean Pract.', 2],
           ['CI Coaching', 5],
-          ['Data Analytics', 1]
         ]);
 
         // Set options for Michelle's pie chart.
         var options = {legend:'left',
                        colors: ['#6300AA', '#B54DFF', '#9500FF', '#5A2680', '#7700CC'],
                        fontSize:11,
+                       pieSliceText:'percentage',
+                       sliceVisibilityThreshold:1/720,
                        
         };
 
@@ -48,8 +48,6 @@
         data.addRows([
           ['Project Management', 3],
           ['Six ∑', 4],
-          ['Insights', 2],
-          ['Lean Pract.', 2],
           ['CI Coaching', 4],
           ['Data Analytics', 3]
         ]);
